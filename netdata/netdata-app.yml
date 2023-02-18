@@ -3,6 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: netdata
+  namespace: argocd
 spec:
   destination:
     namespace: default
@@ -16,3 +17,4 @@ spec:
     automated:
       prune: true
       selfHeal: true
+      
